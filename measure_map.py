@@ -172,16 +172,16 @@ C.rot_90 = False
 
 channel_size = 128 #default
 if C.network == 'resnet3d':
-    channel_size = 512
+	channel_size = 512
 	import keras_frcnn.resnet3d_v2 as nn
 elif C.network == 'vgg3d':
-    channel_size = 512
+    	channel_size = 512
 	import keras_frcnn.vgg3d_v2 as nn
 elif C.network == 'net3d':
-    channel_size = 128
+    	channel_size = 128
 	import keras_frcnn.net3d as nn
 elif C.network == 'snet':
-    channel_size = 13
+    	channel_size = 13
 	from keras_frcnn import snet as nn
 else:
 	print('Not a valid model')
